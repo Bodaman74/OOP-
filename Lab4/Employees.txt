@@ -1,0 +1,2 @@
+E001,Ali,ali@email.com,Cairo,0101111111
+E003,Seif,mona@email.com,Alex,0103333333
