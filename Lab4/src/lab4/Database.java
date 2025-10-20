@@ -1,19 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lab4;
 
+import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
-/**
- *
- * @author DELL
- */
 public abstract class Database<T> {
     protected ArrayList<T> records;
     protected String filename;
@@ -33,9 +25,8 @@ public abstract class Database<T> {
     }
 
     public void readFromFile() {
-        BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(filename));
+            BufferedReader reader = new BufferedReader(new FileReader(filename));
             String line = reader.readLine();
 
             while (line != null) {
@@ -47,21 +38,20 @@ public abstract class Database<T> {
             }
             reader.close();
         } catch (Exception e) {
-           
+            // File might not exist yet
         }
     }
 
     public void saveToFile() {
-        PrintWriter writer = null;
         try {
-            writer = new PrintWriter(new FileWriter(filename));
+            PrintWriter writer = new PrintWriter(new FileWriter(filename));
             for (int i = 0; i < records.size(); i++) {
                 T record = records.get(i);
                 writer.println(lineRepresentation(record));
             }
             writer.close();
         } catch (Exception e) {
-            
+            System.out.println("Error saving to " + filename);
         }
     }
 

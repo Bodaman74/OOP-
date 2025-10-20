@@ -1,17 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lab4;
 
-/**
- *
- * @author DELL
- */
 public class ProductDatabase extends Database<Product> {
-
     public ProductDatabase(String filename) {
-        super(filename); 
+        super(filename);
     }
 
     @Override
@@ -27,15 +18,13 @@ public class ProductDatabase extends Database<Product> {
         return null;
     }
 
-    
     @Override
     protected String getSearchKey(Product record) {
         return record.getSearchKey();
     }
 
-    
     @Override
     protected String lineRepresentation(Product record) {
         return record.lineRepresentation();
     }
-     }
+}

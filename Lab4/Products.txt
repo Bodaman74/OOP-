@@ -1,2 +1,7 @@
-P101,Laptop,Dell,TechStore,5,15500.75
+P101,Laptop,Del1,TechStore,5,15500.75
 P103,Keyboard,HP,TechStore,15,700.0
+P500,Tablet,Samsung,ElectroStore,5,800.0
+P001,Laptop,Dell,TechStore,9,1500.0
+P2394,Laptop,Apple,TechSupplier,9,1500.0
+P2568,Smartphone,Samsung,MobileStore,24,800.0
+P3001,Tablet,Lenovo,TechSupplier,15,400.0
