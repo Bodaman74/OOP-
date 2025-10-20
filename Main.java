@@ -43,7 +43,6 @@ public class Main {
             System.out.println(cp.lineRepresentation());
         }
     }
-    
-    System.out.println(new java.io.File("CustomersProducts.txt").getAbsolutePath());
+
 
 }
