@@ -1,0 +1,2 @@
+P101,Laptop,Dell,TechStore,5,15500.75
+P103,Keyboard,HP,TechStore,15,700.0
