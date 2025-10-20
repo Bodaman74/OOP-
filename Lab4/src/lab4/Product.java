@@ -50,6 +50,9 @@ public class Product {
     public String getSearchKey() {
         return productID;
     }
+    public double getPrice(){
+        return price;
+    }
 
 
 }
